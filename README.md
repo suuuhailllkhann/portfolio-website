@@ -14,10 +14,27 @@ A professional, recruiter-focused personal portfolio for Suhail. The site presen
 
 Requires Node.js 22.13 or newer.
 
+Verify the active version before installing dependencies:
+
+```bash
+node --version
+```
+
+If this reports Node 20, install or switch to Node 22 LTS. With `nvm-windows`, run:
+
+```bash
+nvm install 22.13.0
+nvm use 22.13.0
+```
+
+Then reopen the terminal and continue:
+
 ```bash
 npm install
 npm run dev
 ```
+
+Do not use `npm audit fix --force` as a startup fix. Audit warnings are separate from runtime compatibility, and forcing upgrades can introduce breaking dependency changes.
 
 Open the local URL shown in the terminal.
 
