@@ -28,7 +28,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <script dangerouslySetInnerHTML={{ __html: `document.documentElement.dataset.theme=localStorage.getItem('theme')||'dark'` }} />
+        <script dangerouslySetInnerHTML={{ __html: `document.documentElement.dataset.theme=localStorage.getItem('theme')||'light'` }} />
         {children}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       </body>

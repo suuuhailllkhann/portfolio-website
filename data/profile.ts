@@ -2,7 +2,8 @@ import { siteConfig } from "@/config/site";
 
 export const profile = {
   name: "Suhail",
-  title: "Data Scientist · Machine Learning Engineer · Healthcare AI",
+  roles: ["Data Scientist", "Applied ML Engineer"],
+  nextRole: "Healthcare AI",
   summary: "I build data-driven and machine-learning systems using Python, SQL, AWS, and production-oriented engineering practices, with a growing specialization in healthcare AI.",
   location: "United States",
 };
