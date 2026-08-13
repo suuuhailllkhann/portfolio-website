@@ -1,58 +1,61 @@
-import Link from "next/link";
 import { AboutSection } from "@/components/AboutSection";
 import { ContactSection } from "@/components/ContactSection";
 import { ExperienceTimeline } from "@/components/ExperienceTimeline";
-import { FeaturedProjectCard } from "@/components/FeaturedProjectCard";
 import { Hero } from "@/components/Hero";
+import { LeadershipSection } from "@/components/LeadershipSection";
 import { SectionHeading } from "@/components/SectionHeading";
 import { SiteShell } from "@/components/SiteShell";
-import { articles, certification, skillGroups } from "@/data/profile";
+import { ToolsStrip } from "@/components/ToolsStrip";
+import { SelectedWorkCarousel } from "../components/SelectedWorkCarousel";
+import { TechnologyStack } from "../components/TechnologyStack";
 
 export default function Home() {
   return (
     <SiteShell>
       <main>
         <Hero />
+        <ToolsStrip />
         <AboutSection />
-        <section id="experience" className="section">
+        <section id="experience" className="section section-tint">
           <div className="container">
             <SectionHeading eyebrow="02 / Experience" title="Work at the intersection of data, systems, and care." />
             <ExperienceTimeline />
           </div>
         </section>
+        <LeadershipSection />
         <section id="projects" className="section section-tint">
           <div className="container">
-            <SectionHeading eyebrow="03 / Selected work" title="Machine learning, designed for real-world constraints." />
-            <FeaturedProjectCard />
-          </div>
-        </section>
-        <section id="skills" className="section">
-          <div className="container">
-            <SectionHeading eyebrow="04 / Technical toolkit" title="A practical stack for data products." />
-            <div className="skills-grid">
-              {skillGroups.map((group) => (
-                <article className="skill-card" key={group.title}>
-                  <h3>{group.title}</h3>
-                  <ul>{group.items.map((item) => <li key={item}>{item}</li>)}</ul>
-                </article>
-              ))}
+            <div className="selected-work-heading">
+              <span className="eyebrow">04 / Selected work</span>
+              <h2>From complex data<br />to intelligent systems.</h2>
             </div>
-            <article className="cert-card">
-              <div><span className="mono-label">Certification</span><h3>{certification.title}</h3></div>
-              <Link href={certification.url}>View credential <span aria-hidden="true">↗</span></Link>
-            </article>
+            <SelectedWorkCarousel />
           </div>
         </section>
-        <section id="writing" className="section section-tint">
-          <div className="container">
-            <SectionHeading eyebrow="05 / Writing" title="Notes on responsible, reproducible ML." description="Planned technical articles drawn from current project work." />
-            <div className="article-grid">
-              {articles.map((article, index) => (
-                <article className="article-card" key={article}>
-                  <div><span className="mono-label">Planned · 0{index + 1}</span><h3>{article}</h3></div>
-                  <span className="coming-soon">Coming soon</span>
-                </article>
-              ))}
+        <TechnologyStack />
+        <section id="writing" className="section writing-section">
+          <div className="container writing-layout">
+            <div className="writing-intro">
+              <span className="eyebrow">06 / Writing</span>
+              <h2>Thinking beyond<br />the model.</h2>
+              <p>Technical writing on applied machine learning, data science, reproducibility, and the engineering decisions that turn models into reliable systems.</p>
+            </div>
+            <div className="article-index">
+              <article className="article-index-row">
+                <span className="article-number">01</span>
+                <div><h3>Preventing Data Leakage in Machine Learning</h3><span className="article-category">Machine Learning · Data Quality</span></div>
+                <span className="article-status">Planned</span>
+              </article>
+              <article className="article-index-row">
+                <span className="article-number">02</span>
+                <div><h3>From Notebook to Production: Building Reproducible ML Pipelines</h3><span className="article-category">MLOps · ML Engineering</span></div>
+                <span className="article-status">Planned</span>
+              </article>
+              <article className="article-index-row">
+                <span className="article-number">03</span>
+                <div><h3>Forecasting Real-World Demand: What Makes Time-Series ML Different</h3><span className="article-category">Forecasting · Applied ML</span></div>
+                <span className="article-status">Planned</span>
+              </article>
             </div>
           </div>
         </section>
