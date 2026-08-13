@@ -27,7 +27,7 @@ export default function Home() {
           <div className="container">
             <div className="selected-work-heading">
               <span className="eyebrow">04 / Selected work</span>
-              <h2>From complex data<br />to intelligent systems.</h2>
+              <h2>From complex data<br />{" "}to intelligent systems.</h2>
             </div>
             <SelectedWorkCarousel />
           </div>
