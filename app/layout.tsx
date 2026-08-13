@@ -8,7 +8,7 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: "Suhail | Data Scientist & Machine Learning Engineer",
+  title: "Suhail Khan",
   description: siteConfig.description,
   alternates: { canonical: "/" },
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
