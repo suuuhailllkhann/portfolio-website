@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   alternates: { canonical: "/" },
   icons: {
-    icon: [{ url: "/sk-favicon.svg", type: "image/svg+xml" }],
-    shortcut: "/sk-favicon.svg",
+    icon: [{ url: "/sk-favicon.svg?v=2", type: "image/svg+xml" }],
+    shortcut: "/sk-favicon.svg?v=2",
   },
   robots: { index: true, follow: true },
   openGraph: { title: "Suhail | Data Scientist & Machine Learning Engineer", description: siteConfig.description, url: siteConfig.url, siteName: "Suhail — Portfolio", type: "website", images: [{ url: "/og.png", width: 1200, height: 630, alt: "Suhail — Data Scientist and Machine Learning Engineer" }] },
