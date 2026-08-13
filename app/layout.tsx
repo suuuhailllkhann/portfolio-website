@@ -11,7 +11,10 @@ export const metadata: Metadata = {
   title: "Suhail Khan",
   description: siteConfig.description,
   alternates: { canonical: "/" },
-  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+  icons: {
+    icon: [{ url: "/sk-favicon.svg", type: "image/svg+xml" }],
+    shortcut: "/sk-favicon.svg",
+  },
   robots: { index: true, follow: true },
   openGraph: { title: "Suhail | Data Scientist & Machine Learning Engineer", description: siteConfig.description, url: siteConfig.url, siteName: "Suhail — Portfolio", type: "website", images: [{ url: "/og.png", width: 1200, height: 630, alt: "Suhail — Data Scientist and Machine Learning Engineer" }] },
   twitter: { card: "summary_large_image", title: "Suhail | Data Scientist & Machine Learning Engineer", description: siteConfig.description, images: ["/og.png"] },
