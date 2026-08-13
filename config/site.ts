@@ -1,5 +1,5 @@
 export const siteConfig = {
-  url: "https://www.your-domain.com",
+  url: "https://www.suhailkhan.dev",
   description: "Portfolio of Suhail, a Data Scientist and Machine Learning Engineer specializing in healthcare analytics, machine learning, Python, SQL, AWS, and production-oriented data systems.",
   links: {
     github: "https://github.com/suuuhailllkhann",
