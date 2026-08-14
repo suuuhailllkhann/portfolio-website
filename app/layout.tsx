@@ -8,7 +8,7 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: "Suhail Khan",
+  title: "Suhail | Data Scientist & Applied Machine Learning",
   description: siteConfig.description,
   alternates: { canonical: "/" },
   icons: {
@@ -16,8 +16,25 @@ export const metadata: Metadata = {
     shortcut: "/sk-favicon.svg?v=3",
   },
   robots: { index: true, follow: true },
-  openGraph: { title: "Suhail | Data Scientist & Machine Learning Engineer", description: siteConfig.description, url: siteConfig.url, siteName: "Suhail — Portfolio", type: "website", images: [{ url: "/og.png", width: 1200, height: 630, alt: "Suhail — Data Scientist and Machine Learning Engineer" }] },
-  twitter: { card: "summary_large_image", title: "Suhail | Data Scientist & Machine Learning Engineer", description: siteConfig.description, images: ["/og.png"] },
+  openGraph: {
+    title: "Suhail | Data Scientist & Applied Machine Learning",
+    description: siteConfig.description,
+    url: siteConfig.url,
+    siteName: "Suhail — Portfolio",
+    type: "website",
+    images: [{
+      url: `${siteConfig.url}/og-suhail-2026.png`,
+      width: 1200,
+      height: 630,
+      alt: "Suhail — Data Scientist and Applied Machine Learning",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Suhail | Data Scientist & Applied Machine Learning",
+    description: siteConfig.description,
+    images: [`${siteConfig.url}/og-suhail-2026.png`],
+  },
 };
 
 const structuredData = {

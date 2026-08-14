@@ -1,6 +1,6 @@
 export const siteConfig = {
   url: "https://www.suhailkhan.dev",
-  description: "Portfolio of Suhail, a Data Scientist and Machine Learning Engineer specializing in healthcare analytics, machine learning, Python, SQL, AWS, and production-oriented data systems.",
+  description: "Data Scientist focused on applied machine learning, predictive modeling, forecasting, MLOps, and production-oriented ML systems.",
   links: {
     github: "https://github.com/suuuhailllkhann",
     linkedin: "https://www.linkedin.com/in/suhail-khan-6185a6189/",
