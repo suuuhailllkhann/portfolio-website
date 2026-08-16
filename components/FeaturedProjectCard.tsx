@@ -6,7 +6,7 @@ export function FeaturedProjectCard() {
   return (
     <article className="project-feature">
       <div className="project-index">
-        <img className="project-data-visual" src="/selected-work-data-flow.png" alt="" aria-hidden="true" />
+        <img className="project-data-visual" src="/selected-work-data-flow.webp" alt="" aria-hidden="true" loading="lazy" decoding="async" fetchPriority="low" />
         <span className="mono-label">Featured project&nbsp; / &nbsp;01</span>
         <div className="system-mark" aria-label="Data to model to insight workflow">
           <div className="system-stage"><span><LuDatabase aria-hidden="true" /></span><div><strong>DATA</strong><small>Patient Records</small></div></div>

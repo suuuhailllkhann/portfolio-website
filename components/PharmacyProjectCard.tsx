@@ -1,22 +1,21 @@
+import Link from "next/link";
+
 export function PharmacyProjectCard() {
-  const tags = ["Python", "PostgreSQL", "MLflow", "FastAPI", "Docker", "AWS"];
+  const tags = ["Python", "scikit-learn", "MLflow", "FastAPI", "PostgreSQL", "Docker"];
 
   return (
     <article className="project-feature pharmacy-project">
       <div className="pharmacy-project-visual">
-        <img src="/pharmacy-demand-project.png" alt="Pharmacy demand history, forecast curve, and production workflow" />
+        <img src="/pharmacy-project.webp" alt="Pharmacy data workflow from operational records to model-assisted follow-up" loading="lazy" decoding="async" fetchPriority="low" />
       </div>
       <div className="project-content">
-        <div className="status"><i /> Production ML system</div>
-        <h3>Pharmacy Demand Forecasting &amp; MLOps Pipeline - NYRX</h3>
+        <div className="status"><i /> Applied ML platform · synthetic data</div>
+        <h3>Pharmacy Reconciliation &amp; Prescription Renewal ML Platform</h3>
         <ul className="tag-list">{tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
-        <ul className="pharmacy-summary">
-          <li>Engineered temporal, lag, rolling, and calendar features from pharmacy billing and ordering history and compared forecasting approaches using time-aware validation and baseline-relative evaluation.</li>
-          <li>Built a reproducible ML lifecycle covering experiment tracking, model versioning, automated testing, containerized inference, prediction logging, and monitoring for integration with existing application workflows.</li>
-        </ul>
+        <p>Built an end-to-end Applied ML system for leakage-safe prescription-renewal prediction, operational follow-up workflows, and containerized deployment using entirely synthetic pharmacy data.</p>
         <div className="project-links">
-          <span className="button is-disabled" aria-disabled="true" title="Project details link is not configured">View project details <span aria-hidden="true">→</span></span>
-          <span className="text-link is-disabled" aria-disabled="true" title="GitHub link is not configured">View code on GitHub <span aria-hidden="true">↗</span></span>
+          <Link className="button" href="/projects/pharmacy-reconciliation-ml">Read Project <span aria-hidden="true">→</span></Link>
+          <a className="text-link" href="https://github.com/suuuhailllkhann/pharmacy-reconciliation-ml" target="_blank" rel="noreferrer">View code on GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </article>
